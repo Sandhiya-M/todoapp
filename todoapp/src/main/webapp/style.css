@@ -1,0 +1,149 @@
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+
+.cf:after{
+    clear:both;
+}
+
+.cf{
+    zoom:1;
+   
+}    
+/* Form wrapper styling */
+
+.search-wrapper {
+    width: 450px;
+    /*margin: 150px auto 50px auto;*/
+    border-radius: 40px;
+  background: transparent;
+    box-shadow: 0 4px 20px -2px #e9e9e9;
+   margin-left: 35%;    
+}
+
+/* Form text input */
+
+.search-wrapper input {
+ /* padding-left: 20px;*/
+    width: 330px;
+    height: 20px;
+    padding: 10px 5px;
+   
+    font: bold 13px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #fff;
+    border-radius: 40px;
+    border-top-style: none;
+ left:50%;
+}
+
+.search-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.8) inset;
+}
+
+.search-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+  padding-left: 20px;
+}
+
+.search-wrapper input:-moz-placeholder {
+    
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.search-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+  border-style: none;
+   
+}   
+
+/* Form submit button */
+.search-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: 13px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #198cff;
+    border-radius: 40px;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+   
+}  
+
+.search-wrapper button:hover{    
+/*     background: #e54040; */
+}  
+
+.search-wrapper button:active,
+.search-wrapper button:focus{  
+    background: #198cff;
+    outline: 0;  
+}
+
+.search-wrapper button:focus:before,
+.search-wrapper button:active:before{
+        border-right-color: #c42f2f;
+}     
+
+.search-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}  
+/*@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');*/
+
+body {
+  background: #6868AC;
+}
+
+h1{
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  font-size: 5rem;
+  position: absolute;
+  text-shadow: -15px 5px 20px #ced0d3;
+  /*top: 50%;*/
+  left: 50%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #FFB650, 
+    10px 10px 0px #FFD662, 
+    15px 15px 0px  #FF80BF, 
+    20px 20px 0px #EF5097, 
+    25px 25px 0px #6868AC, 
+    30px 30px 0px #90B1E0;
+}
+h2{
+font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  font-size: 5rem;
+  position: absolute;
+  text-shadow: -15px 5px 20px #ced0d3;
+  /*top: 50%;*/
+  left: 50%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #FFB650, 
+    10px 10px 0px #FFD662, 
+    15px 15px 0px  #FF80BF, 
+    20px 20px 0px #EF5097, 
+    25px 25px 0px #6868AC, 
+    30px 30px 0px #90B1E0;}
