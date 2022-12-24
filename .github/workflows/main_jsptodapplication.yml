@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - jsptodapplication
+name: Build and deploy JAR app to Azure Web App - jsptodoapplication
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: java-app
-          path: '${{ github.workspace }}/target/*.jar'
+          path: '${{ github.workspace }}/target/endorsed/*.jar'
 
   deploy:
     runs-on: windows-latest
@@ -47,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'jsptodapplication'
+          app-name: 'jsptodoapplication'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3C3E00C83E7B4A97942FA38D6BC5C30E }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_96fb18b435714f96bd9ae3fb69904af7 }}
           package: '*.jar'
